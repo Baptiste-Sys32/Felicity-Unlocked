@@ -60,21 +60,19 @@ object TrialPreferences {
     }
 
     fun isAppFullVersionEnabled(): Boolean {
-        return SharedPreferences.getEncryptedSharedPreferences().getBoolean(IS_FULL_VERSION_ENABLED, false) ||
-                CalendarUtils.getDaysBetweenTwoDates(Date(getFirstLaunchDate()), CalendarUtils.getToday()) <= MAX_TRIAL_DAYS
+        return true
     }
 
     fun isWithinTrialPeriod(): Boolean {
-        return CalendarUtils.getDaysBetweenTwoDates(Date(getFirstLaunchDate()), CalendarUtils.getToday()) <= MAX_TRIAL_DAYS
+        return true
     }
 
     fun isTrialWithoutFull(): Boolean {
-        return CalendarUtils.getDaysBetweenTwoDates(Date(getFirstLaunchDate()), CalendarUtils.getToday()) <= MAX_TRIAL_DAYS
-                && !isAppFullVersionEnabled()
+        return false
     }
 
     fun isFullVersion(): Boolean {
-        return SharedPreferences.getEncryptedSharedPreferences().getBoolean(IS_FULL_VERSION_ENABLED, false)
+        return true
     }
 
     // ---------------------------------------------------------------------------------------------------------- //
@@ -116,7 +114,7 @@ object TrialPreferences {
      * @return `true` if trial is expired and grace launches used is less than [MAX_GRACE_LAUNCHES].
      */
     fun isGracePeriodActive(): Boolean {
-        return !isAppFullVersionEnabled() && !isWithinTrialPeriod() && getGraceLaunchesUsed() < MAX_GRACE_LAUNCHES
+        return false
     }
 
     /**
@@ -126,7 +124,7 @@ object TrialPreferences {
      * @return `true` if trial is expired and grace launches used has reached [MAX_GRACE_LAUNCHES].
      */
     fun isGracePeriodExpired(): Boolean {
-        return !isAppFullVersionEnabled() && !isWithinTrialPeriod() && getGraceLaunchesUsed() >= MAX_GRACE_LAUNCHES
+        return false
     }
 
     /**
@@ -136,7 +134,7 @@ object TrialPreferences {
      * @return `true` if the app is not a full version and the trial has expired.
      */
     fun isTrialExpired(): Boolean {
-        return !isAppFullVersionEnabled()
+        return false
     }
 
     // ---------------------------------------------------------------------------------------------------------- //
