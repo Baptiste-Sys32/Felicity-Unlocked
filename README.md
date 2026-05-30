@@ -1,39 +1,12 @@
-# Felicity
+# Felicity Local Testing Fork
 
-*_Felicity_ is the third and final app of the three projects I had planned for my own learning, the
-first two are [Positional](https://github.com/Hamza417/Positional)
-and [Inure App Manager](https://github.com/Hamza417/Inure).*
+This is a personal fork of [Felicity](https://github.com/Hamza417/Felicity), an AGPL-licensed offline music player for Android.
 
-The development of the app has started and if you've used the first two apps you might want to join
-the [Telegram Channel](https://t.me/felicity_music_player) and become the part of the whole initial
-development process.
+## Disclaimer
 
-The project will be developed under the codename Felicity, the final name maybe updated in the
-future.
+This fork is for local testing only. I will not be updating it regularly and highly recommend buying the official license from the original Felicity project:
 
-## Stats
-
-[![](https://img.shields.io/github/downloads/Hamza417/Felicity/total?color=blue&label=Total%20Downloads%20(GitHub)&logo=github&logoColor=white)](https://tooomm.github.io/github-release-stats/?username=Hamza417&repository=Felicity)
-[![](https://img.shields.io/endpoint?url=https://ghloc.vercel.app/api/Hamza417/Felicity/badge?style=flat&logo=kotlin&logoColor=white&label=Total%20Lines&color=indianred)](https://ghloc.vercel.app/Hamza417/Felicity?branch=master)
-[![Release](https://img.shields.io/github/v/release/Hamza417/Felicity?color=52be80&label=Current%20Release)](https://github.com/Hamza417/Felicity/releases)
-![](https://img.shields.io/github/languages/count/Hamza417/Felicity?color=white&label=Languages)
-![](https://img.shields.io/github/license/Hamza417/Felicity?color=red&label=License)
-![](https://img.shields.io/badge/Minimum%20SDK-29%20(Android%2010)-839192?logo=android&logoColor=white)
-![](https://img.shields.io/badge/Target%20SDK-36%20(Android%2016)-566573?logo=android&logoColor=white)
-[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/Hamza417/Felicity/build_preview.yml?branch=master&logo=github&logoColor=white&label=build%20(preview)&color=white)](https://github.com/Hamza417/Felicity/actions/workflows/build_preview.yml)
-[![Crowdin](https://badges.crowdin.net/felicity/localized.svg)](https://crowdin.com/project/felicity)
-
-## Download
-
-[![](https://img.shields.io/badge/Play%20Store-05acff?logo=googleplay&logoColor=white)](https://play.google.com/store/apps/details?id=app.simple.felicity)
-[![](https://img.shields.io/github/v/release/Hamza417/Felicity?color=181717&logo=github&label=GitHub%20Release)](https://github.com/Hamza417/Felicity/releases/latest)
-[![](https://img.shields.io/f-droid/v/app.simple.felicity?logo=fdroid&logoColor=white&label=F-Droid&color=1976D2)](https://f-droid.org/en/packages/app.simple.felicity/)
-
-## Purchase
-
-[![](https://img.shields.io/badge/License%20Key%20(GumRoad)-Purchase-23a094?logo=gumroad&logoColor=white)](https://hamza417.gumroad.com/l/Felicity/)
-
-Play Store users can buy full version directly from the app itself.
+[https://github.com/Hamza417/Felicity](https://github.com/Hamza417/Felicity)
 
 ## Features
 
@@ -43,8 +16,8 @@ Play Store users can buy full version directly from the app itself.
 - **Custom DSP:** The entire audio processing chain (EQ, Bass, Reverb) is written in C++ via JNI. It
   utilizes ARM NEON SIMD auto-vectorization to process audio arrays with absolute minimum CPU
   overhead.
-    - Supports bass, treble and more.
-    - Native downmixing support to pass multichannel audio to stereo output.
+  - Supports bass, treble and more.
+  - Native downmixing support to pass multichannel audio to stereo output.
 - **Advanced Effects:** Integrated spatial effects including stereo widening and tape saturation for
   an analog feel.
 - **10-band Equalizer:** A powerful equalizer with 10 adjustable frequency bands up to +/-15 dB with
@@ -88,89 +61,8 @@ Play Store users can buy full version directly from the app itself.
 
 This feature list is not exhaustive and only main features are listed.
 
-## Roadmap
-
-- [x] Initial development and setup
-- [x] Custom audio engine implementation
-- [x] Basic playback controls and UI
-- [x] Library management and scanning
-- [x] Advanced audio effects and equalizer
-- [x] Dynamic theming and custom animations
-- [x] Embedded lyrics support
-- [x] Realtime audio visualizer
-- [x] Milkdrop visualizer support
-- [ ] Crossfade support
-- [ ] Multiple Player interface styles. _(partially fulfilled)_
-- [x] Playlist support
-- [x] LRC Editor
-- [x] Word-by-Word LRC support
-- [x] m3u playlist support
-- [x] Metadata editing support
-- [x] Replay gain
-- [x] Local server for centralized music access across multiple devices.
-- [x] Selection support for library management and playlist creation.
-- [x] Reproducible build
-- [x] Parametric Equalizer
-- [ ] Sleep Timer
-- [ ] Global Search Provider
-- [ ] More widgets
-- [ ] Multiple Queue Support
-- [x] Bookmarks
-
-##### Niche Features
-
-Features that are planned but will not be a priority.
-
-- [ ] Cue sheet support
-- [x] Native USB DAC support (more tests needed)
-- [x] Oboe
-- [x] AAudio
-
-... and more features will be updated here as development progresses.
-
-## Screenshots
-
-|                          |                          |                          |
-|--------------------------|--------------------------|--------------------------|
-| ![](/screenshots/01.png) | ![](/screenshots/02.png) | ![](/screenshots/03.png) |
-| ![](/screenshots/04.png) | ![](/screenshots/05.png) | ![](/screenshots/06.png) |
-| ![](/screenshots/07.png) | ![](/screenshots/08.png) | ![](/screenshots/11.png) |
-| ![](/screenshots/12.png) | ![](/screenshots/13.png) | ![](/screenshots/14.png) |
-| ![](/screenshots/15.png) | ![](/screenshots/16.png) | ![](/screenshots/17.png) |
-| ![](/screenshots/18.png) | ![](/screenshots/19.png) | ![](/screenshots/20.png) |
-| ![](/screenshots/21.png) | ![](/screenshots/22.png) | ![](/screenshots/23.png) |
-| ![](/screenshots/24.png) | ![](/screenshots/25.png) | ![](/screenshots/26.gif) |
-| ![](/screenshots/27.png) | ![](/screenshots/28.png) |                          |
-
-| Artflow Interface        |
-|--------------------------|
-| ![](/screenshots/09.png) |
-| ![](/screenshots/10.png) |
-
-| Server Webpage                        |
-|---------------------------------------|
-| ![](/screenshots/server_01_dark.png)  |
-| ![](/screenshots/server_01_light.png) |
-
-## Translations
-
-[![Crowdin](https://badges.crowdin.net/felicity/localized.svg)](https://crowdin.com/project/felicity)
-
-Felicity now supports localization. If you want to translate it into your own language(s), you can
-do so [here on Crowdin](https://crowdin.com/project/felicity).
-
-[Contributors](https://crowdin.com/project/felicity/members)
-
 ## License
 
-**Felicity Music Player** Copyright © 2026 - Hamza Rizwan
-
-**Felicity Music Player** is released as open source software under
-the [GNU AGPL v3](https://www.gnu.org/licenses/agpl-3.0.en.html)
-license, see the [LICENSE](./LICENSE) file in the project root for the full license text.
-
-## History
-
-Felicity as a whole project is a continuation of my first ever programming
-project [Beatz](https://github.com/Hamza417/Beatz) which I
-tried to do back then solely for learning and getting used to building.
+Felicity Music Player is released as open source software under the
+[GNU AGPL v3](https://www.gnu.org/licenses/agpl-3.0.en.html) license. See the
+[LICENSE](./LICENSE) file for the full license text.
