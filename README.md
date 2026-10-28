@@ -1,6 +1,6 @@
 # Felicity Local Testing Fork
 
-This repository is a personal, experimental testing fork of [Felicity](https://github.com/Hamza417/Felicity), an AGPL-licensed offline music player for Android featuring a custom C++ JNI audio engine, dynamic theming, and an integrated MilkDrop visualizer.
+Personal testing fork of [Felicity](https://github.com/Hamza417/Felicity), an AGPL offline music player for Android. Used to evaluate the app locally with trial checks bypassed, as listed below and in MODIFICATIONS.md.
 
 ## Modifications and Disclaimer
 
